@@ -1,9 +1,6 @@
-contentdir: "content:
-layoutdir: "layouts"
-publishdir: "public"
-indexes:
-  category: "categories"
+contentdir= "content"
+layoutdir= "layouts"
+publishdir= "public"
 baseurl = "http://kotazi.github.io/"
 languageCode = "en-us"
 title = "kotazi.com"
-canonifyurls: true
