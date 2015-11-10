@@ -9,17 +9,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
 <link rel="stylesheet" href="./css/index.css">
-<link href="https://fonts.googleapis.com/css?family=Alice&subset=latin" rel="stylesheet" type="text/css">
-<style>
-.kotazi a {
- font-family: 'Alice', sans-serif;
-}
-</style>
+
 <!--&#91;if lt IE 9&#93;>
 <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
 <!&#91;endif&#93;-->
 <link rel="shortcut icon" href="">
+<script type="text/javascript">
+(function(){
+    var ua = navigator.userAgent.toUpperCase();
+    if(ua.indexOf('IPHONE') != -1 || (ua.indexOf('ANDROID') != -1 && ua.indexOf('MOBILE') != -1)){
+        location.href = '/blog';
+    }
+}());
+</script>
 </head>
 <body>
 <!-- Place your content here -->
@@ -29,8 +32,9 @@
 
   <div class="kotazi">
     <h1><a href="./blog" title="blog">kotazi.com</a></h1>
+    
   </div>
-
+<!-- <div class="border"></div> -->
   <dix class="video_wrapper">
     <div class="pattern"></div>
     <video loop="" autoplay="" style="display: inline-block;">
